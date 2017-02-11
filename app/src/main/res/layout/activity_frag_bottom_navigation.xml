@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schema.android.com/apk/res/android.support.design"
+    android:id="@+id/activity_frag_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/frag_3_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/search_button1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/search_button2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/search_button3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_height"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorAccent"
+        android:layout_gravity="end"
+        android:layout_alignParentBottom="true"
+        design:menu="@menu/my_navigation_items" />
+
+</LinearLayout>
